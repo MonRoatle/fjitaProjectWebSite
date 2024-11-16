@@ -230,8 +230,8 @@ body {
 
 .indexMenu ul {
   color: #000000;
-  border-top: solid #000000 1.5px;
-  border-bottom: solid #000000 1.5px;
+  border-top: solid #000000 2px;
+  border-bottom: solid #000000 2px;
   padding: 0.5em 0 0.5em 1em;
   font-size: 20px;
 }
@@ -301,20 +301,33 @@ body {
 .logoArea img {
   display: block;
   width: 80%;
-  padding-top: 15%;
+  padding-top: -50%;
   padding-left: 10%;
   padding-right: 10%;
-  opacity: 0.75;
+  opacity: 1;
 }
 
 .slideIn {
-  animation-delay: 5s;
-  animation: slideIn 5s;
+  animation-delay: 3s;
+  animation: slideIn 3s;
 }
 
 @keyframes slideIn {
   0% {
-    transform: translateY(110%);
+    transform: translateY(120%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#scroll{
+  
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(200%);
   }
   100% {
     transform: translateY(0);
@@ -322,6 +335,8 @@ body {
 }
 
 .background {
+  animation-delay: 3s;
+  animation: scroll 3s;
   background-color: rgba(255, 255, 255, 0.74);
   background-image: linear-gradient(
       0deg,
@@ -344,13 +359,21 @@ body {
 }
 
 .innerContents {
+  animation-delay: 3s;
+  animation: scroll 3.2s;
   width: 90%;
   height: 100%;
   margin: 0 auto;
   padding: 20px 0;
 }
 
+
+
 .title h1 {
+  animation-delay: 3s;
+  animation: scroll 3.5s;
+  animation-delay: 3s;
+  animation: scroll 3.5s;
   position: relative;
   display: inline-block;
   margin: 1rem 0 1rem -10px;
@@ -374,6 +397,8 @@ body {
 }
 
 .innerContents h2 {
+  animation-delay: 3s;
+  animation: scroll 3.75s;
   padding: 1rem 2rem;
   border-left: 6px double #000;
   background: #f4f4f4;
@@ -385,24 +410,102 @@ body {
   color: #eb6100;
 }
 
+.innnerContents p {
+  
+}
+
+.plotArea{
+  display: flex;
+}
+
+
 .pie01 {
+  animation-delay: 3s;
+  animation: scroll 4s;
   position: relative;
   margin-right: auto;
   margin-left: auto;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background-image: conic-gradient(#d5525f 0% 80%, #d9d9d9 80% 100%);
   border-radius: 50%;
 }
 .pie01 span {
   position: absolute;
-  top: 50%;
-  right: 50px;
-  transform: translateY(-50%);
+  top: 70%;
+  right: 20%;
+  transform: translateY(-70%);
   color: #fff;
   font-size: 26px;
   font-weight: 700;
 }
+
+.pie02 {
+  animation-delay: 3s;
+  animation: scroll 4s;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 250px;
+  height: 250px;
+  background-image: conic-gradient(#ce3a49 0% 83%, #d9d9d9 83% 100%);
+  border-radius: 50%;
+}
+.pie02 span {
+  position: absolute;
+  top: 70%;
+  right: 15%;
+  transform: translateY(-70%);
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.pie03 {
+  animation-delay: 3s;
+  animation: scroll 4s;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 250px;
+  height: 250px;
+  background-image: conic-gradient(#5269cf 0% 73%, #d9d9d9 73% 100%);
+  border-radius: 50%;
+}
+.pie03 span {
+  position: absolute;
+  top: 70%;
+  right: 15%;
+  transform: translateY(-70%);
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+
+.pie04 {
+  animation-delay: 3s;
+  animation: scroll 4s;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 250px;
+  height: 250px;
+  background-image: conic-gradient(#3a55ce 0% 62%, #d9d9d9 62% 100%);
+  border-radius: 50%;
+}
+.pie04 span {
+  position: absolute;
+  top: 70%;
+  right: 7%;
+  transform: translateY(-70%);
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+
+
 
 .card-img-top {
   width: 100%;
