@@ -87,6 +87,10 @@ body {
   filter: blur(8px);
 }
 
+.navigationTop{
+  text-align: center;
+}
+
 #navigation {
   position: fixed;
   z-index: -1;
@@ -117,6 +121,7 @@ body {
   list-style: none;
 }
 
+
 #navigation ul {
   position: fixed;
   padding: 0;
@@ -130,9 +135,27 @@ body {
   display: inline-block;
 }
 
+.navigationTop li{
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+}
+
+
 #navigation li {
   list-style: none;
   text-align: center;
+}
+
+.navigationTop a{
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 #navigation a {
@@ -147,11 +170,18 @@ body {
   font-size: 20px;
 }
 
+.navigationTop li a:hover{
+  color: #000000;
+  background-color: #ffffff;
+  transition: all 0.5s;
+}
+
 #navigation li a:hover {
   color: #ffffff;
   background-color: #000000;
   transition: all 0.5s;
 }
+
 
 #navigation li a::after {
   content: "";
@@ -166,6 +196,11 @@ body {
   transform: scale(0, 1);
   transform-origin: center top;
 }
+
+.navigationTop a:hover::after {
+  transform: scale(1, 1);
+}
+
 
 #navigation li a:hover::after {
   transform: scale(1, 1);
@@ -373,4 +408,17 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+
+/* スクロール時に現れるアニメーション */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

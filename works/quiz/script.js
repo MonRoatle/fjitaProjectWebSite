@@ -41,9 +41,10 @@ function loadQuestion() {
             `).join('')}
         </ul>
     `;
+    questionContainer.style.animation = "slideIn 1s ease-out";
 }
 
-document.getElementById('next-button').addEventListener('click', function () {
+document.getElementById('next-button').addEventListener('click', function() {
     const selectedAnswer = document.querySelector('input[name="answer"]:checked');
     if (selectedAnswer) {
         const answerValue = parseInt(selectedAnswer.value);
@@ -51,7 +52,7 @@ document.getElementById('next-button').addEventListener('click', function () {
             score++;
         }
         currentQuestionIndex++;
-
+        
         if (currentQuestionIndex < questions.length) {
             loadQuestion();
         } else {

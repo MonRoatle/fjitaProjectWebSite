@@ -113,3 +113,15 @@ update = function () {
   requestAnimationFrame(update);
 };
 requestAnimationFrame(update);
+
+
+// スクロール時に「fade-in」クラスを追加
+window.addEventListener('scroll', function () {
+  const elements = document.querySelectorAll('.fade-in');
+  elements.forEach(function (element) {
+      const position = element.getBoundingClientRect().top;
+      if (position < window.innerHeight - 100) {
+          element.classList.add('visible');
+      }
+  });
+});
