@@ -32,6 +32,18 @@ body {
 animation: blink 1s infinite;
 }
 
+#cancel {
+  width: 40px;
+  position: relative;
+  left: 45%;
+}
+
+.d-none {
+  /* display: none; */
+  opacity: 0;
+}
+
+
 @keyframes blink {
     0%, 100% {
         background-color: black;

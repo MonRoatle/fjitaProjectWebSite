@@ -14,6 +14,19 @@ window.onload = function () {
     let countdownDate = new Date();
     countdownDate.setDate(countdownDate.getDate() + 1); // 1日後
 
+    //偽キャンセルボタン
+    let fakeCancel = document.getElementById("cancel");
+
+    //キャンセルボタンの表示
+    function switchDisplay() {
+      //showFirst.classList.add("d-none");
+      fakeCancel.classList.remove("d-none");
+    }
+    //上記関数を10秒後に実行
+    setTimeout(() => {
+      switchDisplay();
+    }, 10000);
+
     function updateCountdown() {
       let now = new Date();
       let distance = countdownDate - now;

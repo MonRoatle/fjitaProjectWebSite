@@ -228,6 +228,47 @@ body {
   font-family: fantasy !important;
 }
 
+.indexMenu ol {
+  color: #000000;
+  border-top: solid #000000 2px;
+  border-bottom: solid #000000 2px;
+  padding: 0.5em 0 0.5em 1em;
+  font-size: 20px;
+}
+
+.indexMenu ol li {
+  line-height: 2;
+  padding: 0.5rem 0;
+}
+
+.indexMenu ol li a {
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 10px #000000d2;
+  border-radius: 0.25em;
+  text-decoration: none;
+  padding: 0.5em 0.8em;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.indexMenu ol li a:hover {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.815);
+  box-shadow: 5px 5px 10px #000000d2;
+  border-radius: 0.25em;
+  padding: 0.5em 0.8em;
+  transition: all 0.3s;
+  padding-bottom: 10px;
+}
+
+.indexMenu ol li p{
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
 .indexMenu ul {
   color: #000000;
   border-top: solid #000000 2px;
@@ -238,12 +279,13 @@ body {
 
 .indexMenu ul li {
   line-height: 2;
-  padding: 0.1rem 0;
+  padding: 0.5rem 0;
 }
 
 .indexMenu ul li a {
   color: #000000;
   text-decoration: none;
+  margin-top: 10px;
 }
 
 .indexMenu ul li a:hover {
@@ -399,7 +441,7 @@ body {
 .innerContents h2 {
   animation-delay: 3s;
   animation: scroll 3.75s;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   border-left: 6px double #000;
   background: #f4f4f4;
   margin-top: 50px;
@@ -408,10 +450,6 @@ body {
 .innerContents h2::first-letter {
   font-size: 150%;
   color: #eb6100;
-}
-
-.innnerContents p {
-  
 }
 
 .plotArea{
